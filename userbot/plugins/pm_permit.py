@@ -314,7 +314,21 @@ async def krish_op(event):
             await borg.send_message(
                 chats, f"**Krishna's friend [Vishakha](https://t.me/the_biology_lover) spotted. \n Welcome you are auto approved!**"
             )               
-            print("Friend here")            
+            print("Friend here")    
+@bot.on(
+    events.NewMessage(incoming=True, from_users=(1732236209))
+)
+async def krish_op(event):
+    if event.fwd_from:
+        return
+    chats = await event.get_chat()
+    if event.is_private:
+        if not lightning_sql.is_approved(chats.id):
+            lightning_sql.approve(chats.id, "`⚠️Alert: @Paramatin7 is Here ⚠️`")
+            await borg.send_message(
+                chats, f"My master's friend [Madboy](https://t.me/warning_madboy_is_back) spotted.\n Welcome to Krishna's inbox"
+            )               
+            print("`Madboy Spotted`")        
       
 @bot.on(
     events.NewMessage(incoming=True, from_users=(1754865180))
