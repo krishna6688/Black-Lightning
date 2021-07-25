@@ -402,7 +402,7 @@ async def lightning_is_better(lightning):
         return
     await lightning.get_chat()
     lightning_id = lightning.query.user_id
-    text1 = f"LOL **Get lost from my PM**😂😂\n\n**[Idiot](tg://user?id={lightning_id}) Bye I'm going to block you.**😂😂"
+    text1 = f"LOL **Get lost to hell from my Inbox, happy with your marks,no need to know mine.**\n\n**[Idiot](tg://user?id={lightning_id}), I'm going to block you.**"
     await lightning.edit("Go To Hell Dude")
     await bot.send_message(lightning.query.user_id, text1)
     await bot(functions.contacts.BlockRequest(lightning.query.user_id))
