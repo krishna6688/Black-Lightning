@@ -340,7 +340,7 @@ async def krish_op(event):
         if not lightning_sql.is_approved(chats.id):
             lightning_sql.approve(chats.id, "**Heya Sir**")
             await borg.send_message(
-                chats, f"My master's friend [Justin](tg://user?id={lightning_id}) spotted.\n Welcome to Krishna's inbox"
+                chats, f"My master's friend [Justin](tg://user?id=1811290300) spotted.\n Welcome to Krishna's inbox"
             )               
             print("`Friend Spotted`")    
       
