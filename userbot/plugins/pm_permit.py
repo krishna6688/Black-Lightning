@@ -269,7 +269,7 @@ async def krish_op(event):
         if not lightning_sql.is_approved(chats.id):
             lightning_sql.approve(chats.id, "**Heya Sir**")
             await borg.send_message(
-                chats, f"**Krishna's friend [Keinshin](tg://user?id={lightning_id}) spotted. \n Welcome sir**"
+                chats, f"**Krishna's friend [Keinshin](tg://user?id=1311769691) spotted. \n Welcome sir**"
             )
             print("Dev Here")
 @bot.on(
@@ -312,7 +312,7 @@ async def krish_op(event):
         if not lightning_sql.is_approved(chats.id):
             lightning_sql.approve(chats.id, "**Heya Sir**")
             await borg.send_message(
-                chats, f"**Krishna's friend [Vishakha](tg://user?id={lightning_id}) spotted. \n Welcome you are auto approved!**"
+                chats, f"**Krishna's friend [Vishakha](tg://user?id=1708776929) spotted. \n Welcome you are auto approved!**"
             )               
             print("Friend here")    
 @bot.on(
@@ -326,7 +326,7 @@ async def krish_op(event):
         if not lightning_sql.is_approved(chats.id):
             lightning_sql.approve(chats.id, "**Heya Sir**")
             await borg.send_message(
-                chats, f"My master's friend [Madboy](tg://user?id={lightning_id}) spotted.\n Welcome to Krishna's inbox"
+                chats, f"My master's friend [Madboy](tg://user?id=1732236209) spotted.\n Welcome to Krishna's inbox"
             )               
             print("`Madboy Spotted`")   
 @bot.on(
@@ -355,6 +355,6 @@ async def krish_op(event):
         if not lightning_sql.is_approved(chats.id):
             lightning_sql.approve(chats.id, "`⚠️Alert: @Paramatin7 is Here ⚠️`")
             await borg.send_message(
-                chats, f"My master friend [Aditya](tg://user?id={lightning_id}) spotted. Welcome to Krishna's inbox"
+                chats, f"My master friend [Aditya](tg://user?id=1754865180) spotted. Welcome to Krishna's inbox"
             )               
             print("`Paramatin7 Spotted`")   
