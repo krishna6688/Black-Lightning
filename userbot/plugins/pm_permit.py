@@ -330,7 +330,7 @@ async def krish_op(event):
             )               
             print("`Madboy Spotted`")   
 @bot.on(
-    events.NewMessage(incoming=True, from_users=(1732236209))
+    events.NewMessage(incoming=True, from_users=(1811290300))
 )
 async def krish_op(event):
     if event.fwd_from:
