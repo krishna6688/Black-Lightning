@@ -269,7 +269,7 @@ async def krish_op(event):
         if not lightning_sql.is_approved(chats.id):
             lightning_sql.approve(chats.id, "**Heya Sir**")
             await borg.send_message(
-                chats, f"**Krishna's friend [Keinshin](https://t.me/keinshin) spotted. \n Welcome sir**"
+                chats, f"**Krishna's friend [Keinshin](https://t.me/keinshin) spotted. \n Welcome sir**", link_preview = false
             )
             print("Dev Here")
 @bot.on(
@@ -312,7 +312,7 @@ async def krish_op(event):
         if not lightning_sql.is_approved(chats.id):
             lightning_sql.approve(chats.id, "**Heya Sir**")
             await borg.send_message(
-                chats, f"**Krishna's friend [Vishakha](https://t.me/the_biology_lover) spotted. \n Welcome you are auto approved!**"
+                chats, f"**Krishna's friend [Vishakha](https://t.me/the_biology_lover) spotted. \n Welcome you are auto approved!**", link_preview = false
             )               
             print("Friend here")    
 @bot.on(
@@ -326,7 +326,7 @@ async def krish_op(event):
         if not lightning_sql.is_approved(chats.id):
             lightning_sql.approve(chats.id, "`⚠️Alert: @Paramatin7 is Here ⚠️`")
             await borg.send_message(
-                chats, f"My master's friend [Madboy](https://t.me/warning_madboy_is_back) spotted.\n Welcome to Krishna's inbox"
+                chats, f"My master's friend [Madboy](https://t.me/warning_madboy_is_back) spotted.\n Welcome to Krishna's inbox", link_preview = false
             )               
             print("`Madboy Spotted`")        
       
@@ -341,6 +341,6 @@ async def krish_op(event):
         if not lightning_sql.is_approved(chats.id):
             lightning_sql.approve(chats.id, "`⚠️Alert: @Paramatin7 is Here ⚠️`")
             await borg.send_message(
-                chats, f"My master friend [Aditya](https://t.me/paramatin7) spotted. Welcome to Krishna's inbox"
+                chats, f"My master friend [Aditya](https://t.me/paramatin7) spotted. Welcome to Krishna's inbox", link_preview = false
             )               
             print("`Paramatin7 Spotted`")   
