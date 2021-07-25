@@ -20,7 +20,7 @@ requirements_path = path.join(
 HEROKU_API_KEY = config.HEROKU_API_KEY
 HEROKU_APP_NAME = config.HEROKU_APP_NAME
 GIT_REPO_NAME = "Black-lightning"
-UPSTREAM_REPO_URL = "https://github.com/Keinshin/Black-Lightning"
+UPSTREAM_REPO_URL = "https://github.com/Krishna6688/Black-Lightning"
 
 async def gen_chlog(repo, diff):
     ch_log = ''
