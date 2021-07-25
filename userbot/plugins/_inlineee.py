@@ -199,8 +199,7 @@ if LIGHTNING_WARN is None:
     f"**My master {LIGHTNINGUSER} is busy right now !** \n"
     f"Please let me know why you came here. "
     f"**Choose your desired reason from below.**  \n\n"
-    f"**But don't spam otherwise you will be blocked**\n\n"
-    f"**Also choose your Original reason Else you will be blocked [Don't Underestimate]**"
+    f"**But don't spam otherwise you will be blocked**"
    )
 else:
     WARNING = LIGHTNING_WARN
@@ -208,7 +207,7 @@ else:
 LIGHTNING_BOT_PIC = (
     LIGHTNING_BOT_PIC
     if LIGHTNING_BOT_PIC
-    else "https://telegra.ph/file/ff90ed0b44221a7b438b7.jpg"
+    else "https://telegra.ph/file/892d72faf676aa3125e65.jpg"
 )
 
 
@@ -257,7 +256,7 @@ async def inline_handler(lightning):
             file=LIGHTNING_BOT_PIC,
             text=WARNING,
             buttons=[
-                [custom.Button.inline("Wanna Spam Something?😉", data="lightning_is_here_cant_spam")],
+                [custom.Button.inline("Want to know my marks?", data="lightning_is_here_cant_spam")],
                 [
                     custom.Button.inline(
                         "My Friend❤️❤️",
@@ -403,14 +402,14 @@ async def lightning_is_better(lightning):
         return
     await lightning.get_chat()
     lightning_id = lightning.query.user_id
-    text1 = f"LOL **You Think So You Can**😂😂\n\n**[Idiot](tg://user?id={lightning_id}) Bye I'm going to block you.**😂😂"
-    await lightning.edit("Off Course Go To Hell Dude")
+    text1 = f"LOL **Get lost from my PM**😂😂\n\n**[Idiot](tg://user?id={lightning_id}) Bye I'm going to block you.**😂😂"
+    await lightning.edit("Go To Hell Dude")
     await bot.send_message(lightning.query.user_id, text1)
     await bot(functions.contacts.BlockRequest(lightning.query.user_id))
     await lightning.edit("😛")
     await bot.send_message(
         LIGHT_LOGS,
-        f"Hey Master Sorry Disturb You, [Noob](tg://user?id={lightning_id}) Trying To Spam 😂\n\n**So Blocked**.",
+        f"Hey Master Sorry Disturb You, [Noob](tg://user?id={lightning_id}) Trying To know ur marks😂\n\n**So Blocked**.",
     )
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"lol_u_think_so")))
