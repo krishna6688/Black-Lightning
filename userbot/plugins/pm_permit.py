@@ -269,7 +269,7 @@ async def krish_op(event):
         if not lightning_sql.is_approved(chats.id):
             lightning_sql.approve(chats.id, "**Heya Sir**")
             await borg.send_message(
-                chats, f"**Krishna's friend [Keinshin](https://t.me/keinshin) spotted. \n\n Welcome sir**"
+                chats, f"**Krishna's friend [Keinshin](https://t.me/keinshin) spotted. \n Welcome sir**"
             )
             print("Dev Here")
 @bot.on(
@@ -312,7 +312,7 @@ async def krish_op(event):
         if not lightning_sql.is_approved(chats.id):
             lightning_sql.approve(chats.id, "**Heya Sir**")
             await borg.send_message(
-                chats, f"**Krishna's friend [Vishakha](https://t.me/the_biology_lover) spotted. \n\n Welcome you are auto approved!**"
+                chats, f"**Krishna's friend [Vishakha](https://t.me/the_biology_lover) spotted. \n Welcome you are auto approved!**"
             )               
             print("Friend here")            
       
