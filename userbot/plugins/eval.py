@@ -12,6 +12,7 @@ from uniborg.util import lightning_cmd
 
 
 @borg.on(lightning_cmd("eval"))
+@borg.on(sudo_cmd(allow_sudo=False))
 async def _(event):
     if event.fwd_from:
         return
