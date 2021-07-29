@@ -8,7 +8,7 @@ import io
 import sys
 import traceback
 
-from uniborg.util import lightning_cmd
+from uniborg.util import lightning_cmd, sudo_cmd
 
 
 @borg.on(lightning_cmd("eval"))
