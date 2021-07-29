@@ -11,7 +11,7 @@ import traceback
 from uniborg.util import lightning_cmd, sudo_cmd
 
 
-@borg.on(lightning_cmd("eval"))
+@borg.on(lightning_cmd(incoming=false, pattern="eval"))
 @borg.on(sudo_cmd(pattern=r"eval", allow_sudo=False))
 async def _(event):
     if event.fwd_from:
