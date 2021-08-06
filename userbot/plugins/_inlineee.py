@@ -196,7 +196,7 @@ if LIGHTNING_WARN is None:
     WARNING = (
     f"**{BOT_LIT}"
     f"** I'm here to protect {LIGHTNINGUSER}'s PM from spamming.**\n\n"
-    f"**My master {LIGHTNINGUSER} is busy right now !** \n"
+    f"**My master {LIGHTNINGUSER} is busy in studies.!** \n"
     f"Please let me know why you came here. "
     f"**Choose your desired reason from below.**  \n\n"
     f"**But don't spam otherwise you will be blocked**"
@@ -256,14 +256,14 @@ async def inline_handler(lightning):
             file=LIGHTNING_BOT_PIC,
             text=WARNING,
             buttons=[
-                [custom.Button.inline("Want to know my marks?", data="lightning_is_here_cant_spam")],
+                [custom.Button.inline("Want to Spam?", data="lightning_is_here_cant_spam")],
                 [
                     custom.Button.inline(
                         "My Friend❤️❤️",
                         data="he_sucks",
                     )
                 ],
-                [custom.Button.inline("Requesting🙏", data="fck_ask")],
+                [custom.Button.inline("Want Help?", data="fck_ask")],
                 [
                     custom.Button.inline(
                         "Lemme In :)", 
@@ -402,14 +402,14 @@ async def lightning_is_better(lightning):
         return
     await lightning.get_chat()
     lightning_id = lightning.query.user_id
-    text1 = f"LOL **Get lost to hell from my Inbox, happy with your marks,no need to know mine.**\n\n**[Idiot](tg://user?id={lightning_id}), I'm going to block you.**"
+    text1 = f"LOL **Get lost to hell from my Inbox, I am not allowing you to spam here.**\n\n**[Idiot](tg://user?id={lightning_id}), I'm going to block you.**"
     await lightning.edit("Go To Hell Dude")
     await bot.send_message(lightning.query.user_id, text1)
     await bot(functions.contacts.BlockRequest(lightning.query.user_id))
     await lightning.edit("😛")
     await bot.send_message(
         LIGHT_LOGS,
-        f"Hey Master Sorry Disturb You, [Noob](tg://user?id={lightning_id}) Trying To know ur marks😂\n\n**So Blocked**.",
+        f"Hey Master Sorry To Disturb You, [Noob](tg://user?id={lightning_id}) TryTo Spam😂\n\n**So Blocked**.",
     )
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"lol_u_think_so")))
@@ -534,7 +534,7 @@ async def yes_ucan(lightning):
     await lightning.get_chat()
     await asyncio.sleep(2)
     await lightning.edit("Okay You Can Wait Till Wait")
-    hmmmmm = "Okay Kindly wait  i will inform you"
+    hmmmmm = "Okay Kindly wait  i informed him"
     await bot.send_message(
               lightning.query.user_id, hmmmmm)
           
